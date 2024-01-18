@@ -1,0 +1,271 @@
+.card {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: whitesmoke;
+  display: flex;
+  font-family: monospace;
+}
+
+/*Left*/
+
+.left-section {
+  width: 35%;
+  background-color: rgb(27, 5, 48);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/*Right*/
+
+.right-section {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-1{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form label {
+  font-size: 16px;
+}
+
+.form-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.form-sec input {
+  height: 35px;
+  outline: none;
+  border-radius: 8px;
+  border: solid 1px rgba(0, 0, 0, 0.425);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.form-sec-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.form-sec-3-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.form-sec-3-info input {
+  width: 60px;
+  height: 35px;
+  outline: none;
+  border-radius: 8px;
+  border: solid 1px rgba(0, 0, 0, 0.425);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/*Card*/
+
+/*Front*/
+
+.front-card {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 300px;
+  height: 180px;
+  background: rgb(176, 12, 79);
+  background: linear-gradient(
+    63deg,
+    rgba(176, 12, 79, 1) 35%,
+    rgba(91, 0, 218, 1) 100%
+  );
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px rgba(46, 46, 46, 0.473);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 0;
+  gap: 0;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.info-card-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+  gap: 70px;
+}
+
+.circle-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 110px;
+  padding-right: 40px;
+  width: 100%;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.big-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.small-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: solid 2px white;
+}
+
+/*Back*/
+
+.back-card {
+  position: absolute;
+  top: 55%;
+  left: 15%;
+  width: 300px;
+  height: 180px;
+  background-color: rgb(160, 160, 160);
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px rgba(46, 46, 46, 0.473);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-direction: column;
+  letter-spacing: 1px;
+  z-index: 0;
+}
+
+.black-band {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.884);
+}
+
+.cvc-section {
+  width: 60%;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.39);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirm-button {
+  width: 100%;
+  height: 38px;
+  outline: none;
+  border-radius: 8px;
+  border: solid 1px rgba(0, 0, 0, 0.425);
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: white;
+  background-color: blueviolet;
+}
+
+.confirm-button:hover {
+  background-color: rgb(43, 153, 0);
+  transition-duration: 0.3s;
+}
+
+.confirm-button:not(hover) {
+  background-color: blueviolet;
+  transition-duration: 0.3s;
+}
+
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+/*Media Querys*/
+
+@media (max-width: 1000px) {
+  .card {
+    flex-direction: column;
+    width: 110%;
+  }
+  .left-section {
+    width: auto;
+    min-height: 30vh;
+    height: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-section {
+    width: auto;
+    min-height: 70vh;
+    height: auto;
+  }
+}
+
+@media only screen and (max-device-width: 1000px) and (orientation: landscape) {
+  .card {
+    flex-direction: column;
+    width: 110%;
+  }
+  .left-section {
+    width: auto;
+    min-height: 80vh;
+    height: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-section {
+    width: auto;
+    min-height: 120vh;
+    height: auto;
+  }
+  .front-card{
+    left: 25%;
+  }
+  .back-card{
+    left: 45%;
+  }
+}
